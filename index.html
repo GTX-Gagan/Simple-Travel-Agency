@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Explore The World With Us</h1>
+        <p>Your adventure begins here!</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <h2>Welcome to Our Travel Agency</h2>
+        <p>We offer the best travel deals for your dream vacations.</p>
+    </section>
+    
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination">
+            <img src="images.jpg" alt="Beach">
+            <h3>Maldives</h3>
+        </div>
+        <div class="destination">
+            <img src="images (1).jpg" alt="Mountains">
+            <h3>Switzerland</h3>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="backend.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" required></textarea>
+        
+            <button onclick="bookEvent(1)">Book Now</button>
+        </form>
+        <script>
+function bookEvent(eventId) {
+    alert("Booked Successfully!");
+    alert("We will contact you through email..!")
+}
+</script>
+        
+    </section>
+</body>
+</html>
